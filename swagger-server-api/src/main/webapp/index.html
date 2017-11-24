@@ -29,7 +29,10 @@
       if (url && url.length > 1) {
         url = url[1];
       } else {
-        url = "http://localhost:8080/api-docs";
+    	  //http://localhost:8080/swagger-server-api/api-docs
+        //url = "http://localhost:8080/api-docs";
+        //url = "http://localhost:8080/server-api/api-docs";
+        url='swagger.json';
       }
       window.swaggerUi = new SwaggerUi({
         url: url,

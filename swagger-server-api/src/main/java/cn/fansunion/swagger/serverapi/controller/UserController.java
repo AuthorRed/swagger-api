@@ -42,7 +42,8 @@ public class UserController {
 	// @RequestBody只能有1个
 	// 使用了@RequestBody，不能在拦截器中，获得流中的数据，再json转换，拦截器中，也不清楚数据的类型，无法转换成java对象
 	// 只能手动调用方法
-	public Result<String> add(@RequestBody User user) {
+	public Result<String> add(User user) {
+		System.out.println(user);
 		String u = findUser(user);
 		System.out.println(u);
 		return null;

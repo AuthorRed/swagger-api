@@ -29,6 +29,7 @@ public class User extends CommonParam {
 		this.token = token;
 	}
 
+
 	public String getName() {
 		return name;
 	}
@@ -53,4 +54,8 @@ public class User extends CommonParam {
 		this.sex = sex;
 	}
 
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", password=" + password + ", sex=" + sex + ", token=" + token + "]";
+	}
 }
